@@ -1,0 +1,23 @@
+.jumbotron {
+	padding-top: 200px;
+	padding-bottom: 200px;
+	color: #fff;
+	background-image: url('escheresque.png');
+
+	h1 {
+		margin-top: 0;
+		color: #fff;
+		font-size: 80px;
+	}
+
+	p {
+		color: #888;
+		width: 66%;
+	}
+}
+
+.row {
+	> div {
+		margin-bottom: 40px;
+	}
+}

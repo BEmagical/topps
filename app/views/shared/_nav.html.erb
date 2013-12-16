@@ -1,0 +1,32 @@
+<div class="navbar-wrapper container">
+  <div class="navbar navbar-static-top" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img src="<%= asset_path 'logo-topps.png' %>" alt="" /> BUNT MARKETPLACE</a>
+      </div>
+
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+	        <li><%= nav_link "News", '#' %></li>
+	        <li><%= nav_link "Leaderboards", '#' %></li>
+	        <li><%= nav_link "Awards", '#' %></li>
+	        <li><%= nav_link "Cards", '#' %></li>
+	        <li><%= nav_link "Store", '#' %></li>
+        </ul>
+
+        <ul class="nav navbar-nav pull-right">
+	        <% if user_signed_in? %>
+  				<li><span class="inline-text">Hello, <%= current_user.username %>!</span></li>
+  				<li><%= link_to 'Logout', destroy_user_session_path, :method => :delete %></li>
+					<% else %>
+					  <li><%= link_to 'Login', login_path %></li>
+					<% end %>
+       	</ul> 	
+      </div>
+    </div>
+</div>

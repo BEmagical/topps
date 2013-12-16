@@ -1,0 +1,29 @@
+body {
+	&.sessions-new,
+	&.registrations-new,
+	&.passwords-new {
+		background-image: url('escheresque.png');
+
+		.auth {
+			color: #fff;
+			position: absolute;
+			top: 20%;
+			left: 50%;
+			width: 400px;
+			margin-left: -200px;
+
+			p {color: #888;}
+
+			.form-control {
+				color: #fff;
+				background: rgba(0,0,0,0.3);
+				border: 0;
+				height: 44px;
+
+				&:focus {
+					box-shadow: none;
+				}
+			}
+		}
+	}
+}

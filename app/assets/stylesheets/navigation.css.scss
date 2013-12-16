@@ -1,0 +1,52 @@
+.navbar {
+	position: absolute;
+	margin-top: 20px;
+	width: 100%;
+	border: 0;
+	background-color: transparent;
+	font-family: Oswald;
+
+	.navbar-collapse.collapse {
+		position: relative !important;
+		padding: 0;
+	}
+
+	.navbar-brand {
+		color: #fff;
+		padding-left: 80px;
+		font-family: Oswald;
+		font-size: 13px;
+		text-transform: uppercase;
+
+		img {
+			width: 70px;
+			position: absolute;
+			top: 7px;
+			left: 0;
+		}
+	}
+
+	li {
+		&.active a {
+			color: #fff;
+			background-color: rgba(0,0,0,0.2);
+			&:hover {background-color: rgba(0,0,0,0.2)}
+		}
+		a {
+			font-family: Oswald;
+			color: #575757;
+
+			&:hover {
+				background-color: transparent;
+				color: #fff;
+			}
+		}
+	}	
+}
+
+span.inline-text {
+	color: #fff;
+	padding: 15px 15px;
+	display: inline-block;
+	line-height: 20px;
+}

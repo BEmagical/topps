@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="<%= body_class %>">
+    <%= render 'shared/flash' unless flash.count == 0 %>
+
+    <div class="navbar-wrapper container">
+		  <div class="navbar navbar-static-top" role="navigation">
+		      <div class="navbar-header">
+		        <a class="navbar-brand" href="/"><img src="<%= asset_path 'logo-topps.png' %>" alt="" /> BUNT MARKETPLACE</a>
+		      </div>
+		    </div>
+		</div>
+
+    <%= yield %>
+</body>
+</html>

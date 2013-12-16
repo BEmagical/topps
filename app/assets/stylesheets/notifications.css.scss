@@ -1,0 +1,45 @@
+.alert, .notice {
+	position: fixed;
+	z-index: 10;
+	cursor: pointer;
+	margin: 0;
+	bottom: 20px;
+	right: 20px;
+	background-color: #08c;
+	color: #fff;
+	padding: 15px 20px;
+
+	&:after {
+		content: '';
+		height: 4px;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: rgba(0,0,0,0.3);
+		-webkit-animation: 	timer 4.75s linear;
+		-moz-animation: 		timer 4.75s linear;
+		-o-animation: 			timer 4.75s linear;
+		animation: 					timer 4.75s linear;
+	}
+}
+
+.alert:empty {display: none;}
+.notice:empty {display: none;}
+
+@-webkit-keyframes timer {
+  0%   { width: 0; }
+  100% { width: 100%; }
+}
+@-moz-keyframes timer {
+  0%   { width: 0; }
+  100% { width: 100%; }
+}
+@-o-keyframes timer {
+  0%   { width: 0; }
+  100% { width: 100%; }
+}
+@-webkit-keyframes timer {
+  0%   { width: 0; }
+  100% { width: 100%; }
+}
