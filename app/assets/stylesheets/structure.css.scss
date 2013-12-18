@@ -1,6 +1,10 @@
 body {
+	color: #888;
+	background-color: #272727;
+
 	&.sessions-new,
 	&.registrations-new,
+	&.registrations-create,
 	&.passwords-new {
 		background-image: url('escheresque.png');
 
@@ -26,4 +30,8 @@ body {
 			}
 		}
 	}
+}
+
+h2 {
+	color: #fff;
 }

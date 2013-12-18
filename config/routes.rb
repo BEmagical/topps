@@ -10,7 +10,11 @@ Blog::Application.routes.draw do
     get "login", :to => "users/sessions#new"
   end    
 
-  root "static_pages#home"
+  authenticated do
+    root :to => 'static_pages#dashboard', as: :authenticated
+  end
+
+  root :to => "static_pages#home"
 
   match '/features',    to: 'static_pages#features',    via: 'get'
   match '/download',    to: 'static_pages#download',    via: 'get'

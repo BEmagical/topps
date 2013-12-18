@@ -1,4 +1,9 @@
 <aside id="notifications">
-	<div class="notice animated"><%= notice %></div>
-	<div class="alert animated"><%= alert %></div>
+	<% if notice %>
+		<div class="notice animated"><%= notice %></div>
+	<% end %>
+
+	<% if alert %>
+		<div class="alert animated"><%= alert %></div>
+	<% end %>
 </aside>
